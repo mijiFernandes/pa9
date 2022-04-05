@@ -21,6 +21,12 @@ sdist/
 var/
 wheels/
 pip-wheel-metadata/
+
+# Text backup files
+*.bak
+
+#Database
+*.sqlite3
 share/python-wheels/
 *.egg-info/
 .installed.cfg
