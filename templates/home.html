@@ -12,6 +12,9 @@
             overflow: auto;
             white-space: nowrap;
         }
+        .active{
+            border-bottom: 1px solid #ccc;
+        }
     </style>
     <script type="text/javascript">
         function show_layer(div_name){
@@ -27,21 +30,45 @@
 
             case '1':
             document.all.div_01.style.display="";
+            $('a.nav-link text-white').click(function(){
+                $('a.nav-link text-white').removeClass("active");
+                $(this).addClass("active");
+            });
             break;
             case '2':
             document.all.div_02.style.display="";
+            $('a.nav-link text-white').click(function(){
+                $('a.nav-link text-white').removeClass("active");
+                $(this).addClass("active");
+            });
             break;
             case '3':
             document.all.div_03.style.display="";
+            $('a.nav-link text-white').click(function(){
+                $('a.nav-link text-white').removeClass("active");
+                $(this).addClass("active");
+            });
             break;
             case '4':
             document.all.div_04.style.display="";
+            $('a.nav-link text-white').click(function(){
+                $('a.nav-link text-white').removeClass("active");
+                $(this).addClass("active");
+            });
             break;
             case '5':
             document.all.div_05.style.display="";
+            $('a.nav-link text-white').click(function(){
+                $('a.nav-link text-white').removeClass("active");
+                $(this).addClass("active");
+            });
             break;
             case '6':
             document.all.div_06.style.display="";
+            $('a.nav-link text-white').click(function(){
+                $('a.nav-link text-white').removeClass("active");
+                $(this).addClass("active");
+            });
             break;
             }
         }
