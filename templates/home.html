@@ -13,41 +13,220 @@
             white-space: nowrap;
         }
     </style>
+    <script type="text/javascript">
+        function show_layer(div_name){
+
+        document.all.div_01.style.display="none";
+        document.all.div_02.style.display="none";
+        document.all.div_03.style.display="none";
+        document.all.div_04.style.display="none";
+        document.all.div_05.style.display="none";
+        document.all.div_06.style.display="none";
+
+            switch(div_name){
+
+            case '1':
+            document.all.div_01.style.display="";
+            break;
+            case '2':
+            document.all.div_02.style.display="";
+            break;
+            case '3':
+            document.all.div_03.style.display="";
+            break;
+            case '4':
+            document.all.div_04.style.display="";
+            break;
+            case '5':
+            document.all.div_05.style.display="";
+            break;
+            case '6':
+            document.all.div_06.style.display="";
+            break;
+            }
+        }
+    </script>
 </head>
 <body style="padding-top:90px;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <div class="scrollmenu">
-            <li class="nav-item mx-2 btn btn-primary" style="font-size: 20px">
-                <a class="nav-link text-white" href="{% url 'home' %}">PA8</a>
-            </li>
-            <li class="nav-item mx-2 btn btn-primary">
-                <a class="nav-link text-white" href="#}">News</a>
-            </li>
-            <li class="nav-item mx-2 btn btn-primary">
-                <a class="nav-link text-white" href="#}">Contact</a>
-            </li>
-            <li class="nav-item mx-2 btn btn-primary">
-                <a class="nav-link text-white" href="#}">About</a>
-            </li>
-            <li class="nav-item mx-2 btn btn-primary">
-                <a class="nav-link text-white" href="#}">Support</a>
-            </li>
-            <li class="nav-item mx-2 btn btn-primary">
-                <a class="nav-link text-white" href="#}">Blog</a>
-            </li>
-            <li class="nav-item mx-2 btn btn-primary">
-                <a class="nav-link text-white" href="#}">Tools</a>
-            </li>
-            <li class="nav-item mx-2 btn btn-primary">
-                <a class="nav-link text-white" href="#}">Base</a>
-            </li>
-            <li class="nav-item mx-2 btn btn-primary">
-                <a class="nav-link text-white" href="#}">Custom</a>
-            </li>
-            <li class="nav-item mx-2 btn btn-primary">
-                <a class="nav-link text-white" href="#}">More</a>
-            </li>
+    <div id=div_01>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="scrollmenu">
+                <li class="nav-item mx-2 btn btn-primary" style="font-size: 20px">
+                    <a class="nav-link text-white" href="{% url 'home' %}">PA8</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white">News</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('2');">Contact</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('3');">About</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('4');">Support</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('5');">Blog</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('6');">Tools</a>
+                </li>
+            </div>
+        </nav>
+        <div class="container">
+            <h2 class="title">Home1</h2>
         </div>
-    </nav>
+    </div>
+    <div id=div_02 style="display: none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="scrollmenu">
+                <li class="nav-item mx-2 btn btn-primary" style="font-size: 20px">
+                    <a class="nav-link text-white" href="{% url 'home' %}">PA8</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('1');">News</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white">Contact</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('3');">About</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('4');">Support</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('5');">Blog</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('6');">Tools</a>
+                </li>
+            </div>
+        </nav>
+        <div class="container">
+                <h2 class="title">Home2</h2>
+        </div>
+    </div>
+    <div id=div_03 style="display: none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="scrollmenu">
+                <li class="nav-item mx-2 btn btn-primary" style="font-size: 20px">
+                    <a class="nav-link text-white" href="{% url 'home' %}">PA8</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('1');">News</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('2');">Contact</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white">About</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('4');">Support</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('5');">Blog</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('6');">Tools</a>
+                </li>
+            </div>
+        </nav>
+        <div class="container">
+                <h2 class="title">Home3</h2>
+        </div>
+    </div>
+    <div id=div_04 style="display: none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="scrollmenu">
+                <li class="nav-item mx-2 btn btn-primary" style="font-size: 20px">
+                    <a class="nav-link text-white" href="{% url 'home' %}">PA8</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('1');">News</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('2');">Contact</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('3');">About</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white">Support</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('5');">Blog</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('6');">Tools</a>
+                </li>
+            </div>
+        </nav>
+        <div class="container">
+                <h2 class="title">Home4</h2>
+        </div>
+    </div>
+    <div id=div_05 style="display: none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="scrollmenu">
+                <li class="nav-item mx-2 btn btn-primary" style="font-size: 20px">
+                    <a class="nav-link text-white" href="{% url 'home' %}">PA8</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('1');">News</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('2');">Contact</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('3');">About</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('4');">Support</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white">Blog</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('6');">Tools</a>
+                </li>
+            </div>
+        </nav>
+        <div class="container">
+                <h2 class="title">Home5</h2>
+        </div>
+    </div>
+    <div id=div_06 style="display: none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="scrollmenu">
+                <li class="nav-item mx-2 btn btn-primary" style="font-size: 20px">
+                    <a class="nav-link text-white" href="{% url 'home' %}">PA8</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('1');">News</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('2');">Contact</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('3');">About</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('4');">Support</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white" href="javascript:show_layer('5');">Blog</a>
+                </li>
+                <li class="nav-item mx-2 btn btn-primary">
+                    <a class="nav-link text-white">Tools</a>
+                </li>
+            </div>
+        </nav>
+        <div class="container">
+                <h2 class="title">Home6</h2>
+        </div>
+    </div>
 </body>
 </html>
