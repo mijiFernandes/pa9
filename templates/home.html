@@ -67,7 +67,7 @@
             <div class="wrapper">
                 <div class="slide-container">
                     <div class="slide">
-                        <div>
+                        <div style="width: 100%">
                             {% for post in posts %}
                                 <h3><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h3>
                                 <p align="right">{{ post.modify_dt|date:"j F Y" }}</p>
