@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+
+{% block title %}post_search.html{% endblock %}
+
+{% block content %}
+
+    <h1>{{search_term}}</h1>
+    <br/><br/>
+
+    {% if object_list1 %}
+        {% for post in object_list1 %}
+        <h2><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h2>
+        {{ post.modify_dt|date:"N d, Y" }}
+        <p>{{ post.owner.get_username }}</p>
+        {% endfor %}
+    {% endif %}
+
+    {% if object_list2 %}
+        {% for post in object_list2 %}
+        <h2><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h2>
+        {{ post.modify_dt|date:"N d, Y" }}
+        <p>{{ post.owner.get_username }}</p>
+        {% endfor %}
+    {% endif %}
+
+    {% if not object_list1 and not object_list2 %}
+    <b><i>Search Word({{ search_term }}) Not Found !</i></b>
+    {% endif %}
+
+{% endblock %}
