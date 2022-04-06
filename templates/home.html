@@ -69,9 +69,9 @@
                     <div class="slide">
                         <div style="width: 100%">
                             {% for post in posts %}
-                                <div><h3><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h3></div>
-                                <div style="float:left"><p>&emsp;{{ post.modify_dt|date:"j F Y" }}</p></div>
-                                <div align="right"><h3>{{ post.owner.get_username }}</h3></div>
+                                <h3><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h3>
+                                <p style="float:left">&emsp;{{ post.modify_dt|date:"j F Y" }}</p>
+                                <h3 align="right">{{ post.owner.get_username }}</h3>
                             {% endfor %}
                         </div>
                     </div>
