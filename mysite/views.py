@@ -1,13 +1,19 @@
 from django.views.generic import TemplateView
-from django.views.generic import CreateView
+from django.views.generic import CreateView, ListView
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import AccessMixin
+from blog.models import Post
 
 
 class HomeView(TemplateView):
     template_name = 'home.html'
 
+class PostLV(ListView):
+    model = Post
+    template_name = 'home.html'
+    context_object_name = 'posts'
+    paginate_by = 5
 
 class UserCreateView(CreateView):
     template_name = 'registration/register.html'
