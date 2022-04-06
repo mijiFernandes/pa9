@@ -13,6 +13,33 @@
             white-space: nowrap;
         }
     </style>
+    <style type="text/css">
+        .wrapper {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .slide-container {
+            scroll-snap-type: x proximity; /* 달라붙는 스냅 속성 부여 */
+            overflow-y: hidden;
+            display: flex;
+            width: 800px;
+            height: 400px;
+        }
+        .slide {
+            scroll-snap-align: start; /* 하위 요소의 정렬 방향 */
+            min-width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 3rem;
+            line-height: 0.75;
+        }
+    </style>
     <script type="text/javascript">
         function show_layer(div_name){
 
@@ -75,7 +102,19 @@
             </div>
         </nav>
         <div class="container">
-            <h2 class="title">Home1</h2>
+            <div class="wrapper">
+                <div class="slide-container">
+                    <div class="slide">
+                        <h1>Hyundai</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Toyota</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Tesla</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id=div_02 style="display: none">
@@ -105,7 +144,19 @@
             </div>
         </nav>
         <div class="container">
-                <h2 class="title">Home2</h2>
+            <div class="wrapper">
+                <div class="slide-container">
+                    <div class="slide">
+                        <h1>Hyundai</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Toyota</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Tesla</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id=div_03 style="display: none">
@@ -135,7 +186,19 @@
             </div>
         </nav>
         <div class="container">
-                <h2 class="title">Home3</h2>
+            <div class="wrapper">
+                <div class="slide-container">
+                    <div class="slide">
+                        <h1>Hyundai</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Toyota</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Tesla</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id=div_04 style="display: none">
@@ -165,7 +228,19 @@
             </div>
         </nav>
         <div class="container">
-                <h2 class="title">Home4</h2>
+            <div class="wrapper">
+                <div class="slide-container">
+                    <div class="slide">
+                        <h1>Hyundai</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Toyota</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Tesla</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id=div_05 style="display: none">
@@ -195,7 +270,19 @@
             </div>
         </nav>
         <div class="container">
-                <h2 class="title">Home5</h2>
+            <div class="wrapper">
+                <div class="slide-container">
+                    <div class="slide">
+                        <h1>Hyundai</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Toyota</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Tesla</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id=div_06 style="display: none">
@@ -225,7 +312,19 @@
             </div>
         </nav>
         <div class="container">
-                <h2 class="title">Home6</h2>
+            <div class="wrapper">
+                <div class="slide-container">
+                    <div class="slide">
+                        <h1>Hyundai</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Toyota</h1>
+                    </div>
+                    <div class="slide">
+                        <h1>Tesla</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
