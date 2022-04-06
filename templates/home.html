@@ -41,7 +41,7 @@
 {% endblock %}
 
 </head>
-<body style="padding-top:90px;">
+{% block content %}
     <div id=div_01>
         <div class="scrollmenu">
             <li class="nav-item mx-2 btn btn-primary" style="font-size: 20px">
@@ -284,40 +284,40 @@
             </div>
         </div>
     </div>
-</body>
-{% block extra-script %}
-    <script type="text/javascript">
-        function show_layer(div_name){
+    {% endblock %}
+    {% block extra-script %}
+        <script type="text/javascript">
+            function show_layer(div_name){
 
-        document.all.div_01.style.display="none";
-        document.all.div_02.style.display="none";
-        document.all.div_03.style.display="none";
-        document.all.div_04.style.display="none";
-        document.all.div_05.style.display="none";
-        document.all.div_06.style.display="none";
+            document.all.div_01.style.display="none";
+            document.all.div_02.style.display="none";
+            document.all.div_03.style.display="none";
+            document.all.div_04.style.display="none";
+            document.all.div_05.style.display="none";
+            document.all.div_06.style.display="none";
 
-            switch(div_name){
+                switch(div_name){
 
-            case '1':
-            document.all.div_01.style.display="";
-            break;
-            case '2':
-            document.all.div_02.style.display="";
-            break;
-            case '3':
-            document.all.div_03.style.display="";
-            break;
-            case '4':
-            document.all.div_04.style.display="";
-            break;
-            case '5':
-            document.all.div_05.style.display="";
-            break;
-            case '6':
-            document.all.div_06.style.display="";
-            break;
+                case '1':
+                document.all.div_01.style.display="";
+                break;
+                case '2':
+                document.all.div_02.style.display="";
+                break;
+                case '3':
+                document.all.div_03.style.display="";
+                break;
+                case '4':
+                document.all.div_04.style.display="";
+                break;
+                case '5':
+                document.all.div_05.style.display="";
+                break;
+                case '6':
+                document.all.div_06.style.display="";
+                break;
+                }
             }
-        }
-    </script>
-{% endblock %}
+        </script>
+    {% endblock %}
 </html>
