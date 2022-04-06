@@ -9,11 +9,20 @@ from blog.models import Post
 class HomeView(TemplateView):
     template_name = 'home.html'
 
+
 class PostLV(ListView):
     model = Post
     template_name = 'home.html'
     context_object_name = 'posts'
+    paginate_by = 3
+
+
+class PostLV2(ListView):
+    model = Post
+    template_name = 'blog:index.html'
+    context_object_name = 'posts'
     paginate_by = 5
+
 
 class UserCreateView(CreateView):
     template_name = 'registration/register.html'
