@@ -70,8 +70,8 @@
                         <div style="width: 100%">
                             {% for post in posts %}
                                 <h3><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></h3>
-                                <p align="right">{{ post.modify_dt|date:"j F Y" }}</p>
-                                <h3 align="right" style="float:right">{{ post.owner.get_username }}</h3>
+                                <p style="float:left">{{ post.modify_dt|date:"j F Y" }}</p>
+                                <h3 align="right" style="float:left">{{ post.owner.get_username }}</h3>
                             {% endfor %}
                         </div>
                     </div>
